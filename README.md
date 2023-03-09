@@ -1,2 +1,3 @@
 # book.v2
-a simple site with simple code 
+
+a simple site with simple code
