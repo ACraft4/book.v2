@@ -1,9 +1,9 @@
 :root {
-    --main-title-color: #212121;
-    --main-text-color: #757575;
-    --acent-color: #2196f3;
+    --main-title-color: #f4e622;
+    --main-text-color: #000000;
+    --acent-color: #fba62e;
     --acent-hover-color: #188ce8;
-    --main-color: #ffffff;
+    --main-color: #57ae3a;
     --icon-color: #afb1b8;
 }
 
@@ -27,6 +27,8 @@ body {
     font-weight: normal;
     font-style: normal;
     color: var(--main-title-color);
+    text-shadow: var(--main-text-color);
+    background-color: var(--main-color);
 }
 
 p,
@@ -39,11 +41,6 @@ h6 {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.list {
-    list-style: none;
-}
-
 .link {
     text-decoration: none;
 }
@@ -58,6 +55,65 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    list-style: none;
+}
+li {
+    text-decoration: none;
 }
 
 /* Стилі */
+.container {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.sub_button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--acent-color);
+}
+.sub_button:focus,
+.sub_button:hover {
+    color: var(--main-color);
+    background-color: var(--main-title-color);
+}
+
+.nav_bar {
+    display: flex;
+}
+
+.hero_section {
+    margin: 0;
+    padding: 200px 0;
+    background-color: silver;
+}

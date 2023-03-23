@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="X-UA-Compatible">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,40 +9,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>hellomylitlefriend</title>
 </head>
 <header>
-    <a class="book_logo" href="book.html">КРЕМБО і БАУНТІ</a>
-<nav>
-    <ul>
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Про автора</a></li>
-        <li><a href="#">Про пригоди Крембо та Баунті</a></li>
-        <li><a href="#">Контакти</a></li>
-    </ul>
-</nav>
+    <section class="header_section container">
+        <nav class="nav_bar">
+            <a class="book_logo link" href="book.html">КРЕМБО і БАУНТІ</a>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про книжку</a></li>
+                <li><a href="#">Про автора</a></li>
+            </ul>
+        </nav>
+        <div class="header_contacts">
+            <a href="">0848545458</a>
+            <a href="crembo&baunti@gmail.com">Email</a>
+        </div>
+    </section>
 </header>
 <body>
-    <div class="hero">
-        <h1>Веселі пригоди Крембо та Баунті</h1>
-        <button type="button" class="main_button">Замовити книжку</button>
-    </div>
-    <div class="about_athor">
-        <a href="#"></a>
-        <h2>Про авторку</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur vitae. Quibusdam amet eum quia, accusantium nesciunt eveniet maxime eos minima temporibus, doloribus, animi facilis sed. Nemo nesciunt expedita quas?
-        </p>
-    </div>
-    <h3>Доступна аудіокнига!</h3>
-    <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rerum sequi commodi laudantium minus eaque, maxime alias placeat aliquid enim perferendis excepturi voluptate officia. Optio fugit maxime ipsam, cum tempore distinctio? Rem odio nobis deserunt laudantium maxime deleniti facilis. Delectus tenetur asperiores placeat possimus illo maiores id, at nisi officiis!
-    </div>
-    <footer>
-        <div class="contacts">Контакти</div>
-        <div class="social">Соцмережі</div>
-        <div class="partners">Партнери</div>
-    </footer>
+    <main>
+        <section class="hero_section hero_bg container">
+            <h1 class="hero_title">Мексикаснські пригоди <br> Крембо і Баунті</h1>
+        </section>
+        <section class="main_section container">
+            <button type="button" class="main_button">Замовити книжку</button>
+            <div class="about_book">
+                <a href="#"></a>
+                <h2>Мексикаснські пригоди Крембо і Баунті</h2>
+                <p>
+                    Книга для дітей та дорослих, що люблять або мріють подорожувати та їсти смаколики
+                </p>
+            </div>
+            <div class="about_athor">
+                <ul>
+                    <li>
+                        <img src="./images/olena_kovalinskaya.jpg" alt="жінка, авторка книжки" width="360">
+                    <h3 class="athor_title">Від авторки</h3>
+                    <p class="athor_text">Друзі, буду рада вам розповісти про пригоди цих двох сміливих песиків</p>
+                    </li>
+                    <li>
+                        <img src="./images/olena_kovalinskaya.jpg" alt="жінка, авторка книжки" width="360">
+                        <h3 class="athor_title">Ідея дитячої книжки</h3>
+                        <p class="athor_text">Друзі, буду рада вам розповісти про пригоди цих двох сміливих песиків</p>
+                    </li>
+                    <li>
+                        <img src="./images/olena_kovalinskaya.jpg" alt="жінка, авторка книжки" width="360">
+                        <h3 class="athor_title">Віра в перемогу України</h3>
+                        <p class="athor_text">Друзі, буду рада вам розповісти про пригоди цих двох сміливих песиків</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="audio_book">
+                <h3>Доступна аудіокнига!</h3>
+                <p>
+                    У мене виникла ідея записати аудіконижку і ця мрія втілилась у життя, придбати аудіо версію книжку озвучену професійними акторами можна за посиланням
+                </p>
+            </div>
+        </section>
+    </main>
+        <footer class="footer container">
+            <ul>
+                <li>Контакти</li>
+                <li>Соцмережі</li>
+                <li>Партнери</li>
+            </ul>
+        </footer>
+
 </body>
 </html>
