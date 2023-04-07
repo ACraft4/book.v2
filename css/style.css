@@ -63,11 +63,9 @@ li {
 
 /* Стилі */
 .container {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    margin-right: auto;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -164,32 +162,30 @@ header {
 
 .hero_section {
     height: 600px;
-    background-image: url('/images/crembo_ilustrations.jpeg');
+    background-image: url('../images/crembo_ilustrations.jpeg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 
 .hero_bg {
     background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
+/*main section*/
 .main_section {
     padding-top: 50px;
     padding-bottom: 50px;
-}
-/*main section*/
-
-.main_section {
     display: flex;
     flex-wrap: wrap;
 }
-
 .about_athor ul {
     display: flex;
     flex-wrap: wrap;
@@ -221,6 +217,11 @@ header {
     height: 200px;
     border: 4px solid #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.about_athor li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 .athor_title {
@@ -273,16 +274,24 @@ header {
 
 .main_button {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 24px;
-    background-color: #2c3e50;
+    background-color: var(--acent-color);
     color: #fff;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.main_button:hover,
+.main_button:focus {
+    background-color: #2c3e50;
+}
+
 
 .about_athor li:nth-child(even) {
     background-color: #f9f9f9;
@@ -292,46 +301,62 @@ header {
     background-color: #fff;
 }
 
+
 /*footer*/
+.footer-social-title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
 
-.footer {
-    background-color: #f0f0f0;
-    padding: 50px 0;
+.footer-social {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.footer-box {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 50px 50px;
 }
 
-.footer_section {
-    width: 30%;
-    margin-bottom: 30px;
+.address-logo {
+    margin-right: 650px;
 }
 
-.footer_section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.footer-social-list {
+    display: flex;
 }
 
-.footer_section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.footer-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 12px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(90deg,
+            rgba(0, 212, 255, 0.12398462803089982) 0%,
+            rgba(255, 255, 255, 0.09877454399728647) 0%);
 }
 
-.footer_section ul li {
-    margin-bottom: 10px;
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--acent-color);
 }
 
-.footer_section ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
-
-.phone-number {
-    /* код CSS для відображення телефону */
-}
-
-.email-address {
-    /* код CSS для відображення електронної адреси */
+.footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--main-color);
 }
