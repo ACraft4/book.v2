@@ -138,6 +138,8 @@ header {
 }
 
 .nav_link {
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 16px;
     color: #333;
     text-decoration: none;
@@ -171,7 +173,15 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.hero_section_v2{
+    position: relative;
+    height: 640px;
+    background-image: url('../images/books_crembo_leya.jpg');
+    background-position: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .hero_bg {
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -389,3 +399,5 @@ header {
     height: 20px;
     fill: var(--main-title-color);
 }
+
+/*Друга сторінка де буде частина книги*/

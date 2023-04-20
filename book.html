@@ -12,46 +12,72 @@
     <link rel="stylesheet" href="css/style.css">
     <title>adventurebegin</title>
 </head>
-<header>
-    <a class="book_logo link" href="index.html">КРЕМБО і БАУНТІ</a>
-    <nav>
-        <ul>
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Про автора</a></li>
-            <li><a href="#">Про пригоди Крембо та Баунті</a></li>
-            <li><a href="#">Контакти</a></li>
-        </ul>
-    </nav>
-<body>
+<body class="container">
+    <header>
+        <nav class="nav_bar">
+            <a class="book_logo link" href="index.html">КРЕМБО і БАУНТІ</a>
+            <ul>
+                <li class="nav_li"><a class="nav_link" href="index.html">Головна</a></li>
+                <li class="nav_li"><a class="nav_link" href="book.html">Про книжку</a></li>
+                <li class="nav_li"><a class="nav_link" href="#">Про автора</a></li>
+            </ul>
+        </nav>
+        <div class="header_contacts">
+            <a href="">0848545458</a>
+            <a href="crembo&baunti@gmail.com">Email</a>
+        </div>
+    </header>
     <main>
-        <section class="hero_section">
-            <div class="hero_v2 container"></div>
-            <div>
-                <h2>Частина перша</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aperiam nam quisquam aspernatur unde numquam
-                    cupiditate totam ab debitis asperiores.
-                </p>
+        <section class="hero_section_v2">
+            <div class="hero_v2">
             </div>
         </section>
         <section class="book_section">
-            <div class="container">
-                <h3>Ви можете замовити цю книжку</h3>
-                <a href="#">Картинка</a>
-                <button type="button" class="sub_button">
-                    <a href="#">Розпочати пригоду!</a>
-                </button>
-            </div>
+            <div class="about_book_v2"></div>
+            <div class="book_preview"></div>
         </section>
     </main>
-    <footer>
-        <section class="address_section">
-            <address>
-                <div class="contacts">Контакти</div>
-                <div class="social">Соцмережі</div>
-            </address>
-        </section>
-        <div class="partners">Наші партнери</div>
+    <footer class="footer_section">
+        <div class="footer-box">
+            <div class="address-logo">
+                <div class="book_logo">
+                    <a class="book_logo link" href="book.html">КРЕМБО і БАУНТІ</a>
+                </div>
+                <address class="adress-section">
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="footer-map" href="https://goo.gl/maps/SGXsFM9JkJCVx5928" target="_blank"
+                                rel="noopener noreferrer">м. Київ, Верхній Вал</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link hover-focus" href="mailto:info@example.com"> info@example.com </a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link hover-focus" href="tel:+380991111111"> +38 099 111 11 11 </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-social-title">Ми у соцмережах:</h3>
+                <ul class="footer-social-list list">
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="">
+                            <svg class="footer-social-icon">
+                                <use href="images/symbol-defs.svg#icon-instagram-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="">
+                            <svg class="footer-social-icon">
+                                <use href="images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
