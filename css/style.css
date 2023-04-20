@@ -408,6 +408,14 @@ header {
     height: 20px;
     fill: var(--main-title-color);
 }
+
+.footer_rights {
+    font-size: 14px;
+    color: var(--main-text-color);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 .button_link {
     text-decoration: none;
     color: #ffffff;
